@@ -1,0 +1,67 @@
+
+<html>
+<head>
+<title>Distance</title>
+</head>
+<body>
+<form action="1.php" method="post">
+<table>
+<tr>
+	<th>Co ordinates of X</th>
+	<th>Co ordinates of Y</th>
+</tr>
+<tr>
+	<td>x1<input type ="text" id="x1"></td>
+	<td>y1<input type="text" id="y1"></td>
+</tr>
+<tr>
+	<td>x2<input type ="text" id="x2"></td>
+	<td>y2<input type="text" id="y2"></td>
+</tr>
+	<th>Distance</th>
+	<td><span id = "answer"  ></span></td>
+</tr>
+</table>
+<input type="button" onclick="distance()" value="Calculate Distance" />
+<input type="submit">
+</form>
+<style>
+table{
+	width:30%;
+}
+th {
+	padding:5px;
+}
+th,td {
+	text-align:center;
+}
+table,th,td {
+	border:1px solid black;
+	}
+input[type=text]{
+	border:2px solid red;
+	border-radius:4px;
+}	
+</style>
+<script type="text/JavaScript">
+function distance(){
+var x1=document.getElementById("x1").value;
+var y1=document.getElementById("y1").value;
+var x2=document.getElementById("x2").value;
+var y2=document.getElementById("y2").value;
+x1=parseFloat(x1);
+y1=parseFloat(y1);
+x2=parseFloat(x2);
+y2=parseFloat(y2);
+var distance=Math.sqrt(((x2-x1)**2)+((y2-y1)**2));
+answer.innerHTML=distance;
+  <?php
+   $a="<script>document.writeln(distance);</script>";
+   /*session_start();
+	  $_SESSION['name']=$a;*/
+?>
+}
+</script>
+
+</body>
+</html>

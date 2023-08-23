@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:id="@+id/home"
+     android:title="Home"
+     android:icon="@drawable/home_icon"/>
+
+ <item
+     android:id="@+id/profile"
+     android:title="Profile"
+     android:icon="@drawable/person_profile"/>
+
+ <item
+     android:id="@+id/main_menu"
+     android:title=""
+     android:enabled="true"
+     />
+
+ <item
+     android:id="@+id/entertainment"
+     android:title="Entertainment"
+     android:icon="@drawable/baseline_live_tv_24"/>
+
+
+
+ <item android:icon="@drawable/settings_icon"
+     android:title="Settings"
+     android:id="@+id/menu_settings"/>
+
+</menu>
